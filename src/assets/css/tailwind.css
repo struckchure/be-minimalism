@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+
+html,
+body {
+  @apply m-0 h-full w-full p-0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+* {
+  @apply m-0 p-0 transition-all duration-300;
+}
+
+button {
+  @apply cursor-pointer border-0 outline-none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  @apply h-auto w-full;
+}
+
+header {
+  @apply h-screen w-full bg-cover bg-center bg-no-repeat;
+  background-image: url("../img/chair-4.jpg");
+}
+
+nav {
+  @apply flex flex-row items-center justify-between gap-2 px-2 py-4 md:gap-4 md:px-10;
+}
+
+nav a {
+  @apply no-underline;
+}
+
+.nav-links,
+.nav-extra {
+  @apply flex flex-row items-center justify-around gap-4;
+}
+
+.nav-title a {
+  @apply font-bold text-gray-900;
+}
+
+.nav-links a {
+  @apply relative text-green-900;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  height: 0;
+}
+
+.nav-extra button {
+  @apply bg-transparent;
+}
+
+.nav-extra button i {
+  @apply text-white;
+}
+
+.landing-intro {
+  @apply flex h-full w-full flex-row items-start justify-center md:justify-end;
+}
+
+.landing-intro .content {
+  @apply grid grid-flow-row gap-4 px-4 pt-[8rem] font-light md:px-[14rem];
+}
+
+.landing-intro .content h4 {
+  @apply text-3xl text-gray-900;
+}
+
+.landing-intro .content p {
+  @apply font-light text-green-900;
+}
+
+.landing-intro .content button {
+  @apply w-fit rounded-md bg-white p-4 font-bold text-gray-800;
+}
+
+main {
+  @apply p-4 md:p-[7rem];
+}
+
+.show-room {
+  @apply grid h-full w-fit grid-cols-1 gap-2 md:grid-cols-3;
+}
+
+.show-room div {
+  @apply relative h-full w-auto;
+}
+
+.show-room div > button {
+  @apply absolute right-5 bottom-5 rounded-md p-4;
+}
+
+.show-room div:first-child {
+  @apply col-span-1 row-span-1 md:col-span-2 md:row-span-2;
+}
+
+.show-room img {
+  @apply h-full w-full object-fill;
+}

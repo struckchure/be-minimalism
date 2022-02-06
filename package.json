@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/assets/css/tailwind.css -o ./src/assets/css/style.css --watch"
+  }
+}
